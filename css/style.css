@@ -652,7 +652,8 @@ label {
 }
 
 .container,
-.container-sm {
+.container-sm,
+.container-md {
     width: 100%;
     margin: 0 auto;
     padding-left: 16px;
@@ -661,7 +662,8 @@ label {
 
 @media (min-width: 481px) {
     .container,
-    .container-sm {
+    .container-sm,
+    .container-md {
         padding-left: 24px;
         padding-right: 24px
     }
@@ -672,19 +674,19 @@ label {
 }
 
 .container-sm {
-    max-width: 848px
-}
-
-.container .container-sm {
-    max-width: 800px;
-    padding-left: 0;
-    padding-right: 0
+    max-width: 848px;
 }
 
 .container-md {
     max-width: 1048px;
-    margin: 0 auto;
     text-align: justify;
+}
+
+.container .container-sm,
+.container .container-md {
+    max-width: 800px;
+    padding-left: 0;
+    padding-right: 0;
 }
 
 .screen-reader-text {
